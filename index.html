@@ -3,15 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Disney API</title>
+        <title>Disney Characters API</title>
 
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="stylesheet" href="css/style.css">
+
         <script src="js/script.js"></script>
     </head>
 
     <body>
-        <div id="container">
-            <!-- Cada personagem será um .card aqui -->
-        </div>
+        <!-- Header principal com navegação -->
+        <header class="main-header">
+            <h1 id="title">Disney Characters</h1>
+            
+            <div id="search-container">
+                <input 
+                    id="search-input" 
+                    type="text"
+                    placeholder="Search Disney character..."
+                >
+            </div>
+            
+            <nav class="pagination-nav">
+                <span class="page-number">Page 1</span>
+                <div class="pagination-buttons">
+                    <button id="prev-page-btn" class="nav-button">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button id="next-page-btn" class="nav-button">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Container principal dos cards -->
+        <main id="characters-grid">
+            <!-- Cards dos personagens serão inseridos aqui via JavaScript -->
+        </main>
     </body>
 </html>
