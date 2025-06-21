@@ -5,30 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Disney Characters API</title>
 
+        <!-- Favicon and manifest -->
         <link rel="manifest" href="/site.webmanifest">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="css/style.css">
 
+        <!-- Scripts -->
         <script src="js/script.js"></script>
     </head>
 
     <body>
-        <!-- Header principal com navegação -->
+        <!-- Main header with navigation -->
         <header class="main-header">
-            <h1 id="title">Disney Characters</h1>
+            <h1 id="main-title">Disney Characters</h1>
             
+            <!-- Search container -->
             <div id="search-container">
                 <input 
                     id="search-input" 
-                    type="text"
-                    placeholder="Search Disney character..."
+                    placeholder="Search character..."
                 >
             </div>
             
+            <!-- Pagination navigation -->
             <nav class="pagination-nav">
-                <span class="page-number">Page 1</span>
+                <span id="page-number">Page 1</span>
                 <div class="pagination-buttons">
                     <button id="prev-page-btn" class="nav-button">
                         <span class="material-symbols-outlined">chevron_left</span>
@@ -40,9 +45,9 @@
             </nav>
         </header>
 
-        <!-- Container principal dos cards -->
+        <!-- Main characters grid container -->
         <main id="characters-grid">
-            <!-- Cards dos personagens serão inseridos aqui via JavaScript -->
+            <!-- Character cards will be inserted here via JavaScript -->
         </main>
     </body>
 </html>
